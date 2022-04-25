@@ -1,0 +1,216 @@
+/*GENERAL STYLES*/
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    min-height:100vh;
+    background:#141519;
+    font-family: Overpass;
+}
+/*RATING CARD STYLES*/
+
+.rating-container{
+    display: flex;
+    flex-flow: row wrap;
+    background: #1e252f;
+    width: 325px;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.star-icon{
+    background: #262f38;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 25px 0 0 15px;
+}
+.star{
+    padding-top: 12px;
+}
+
+.rating{
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0 15px 0 15px;
+}
+
+h1{
+    color: hsl(0, 0%, 100%);
+    padding-bottom: 15px;
+}
+
+p{
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+    padding-top: 5px;
+}
+
+.btn-group{
+    padding-left: 25px;
+}
+
+button{
+    color: hsl(217, 12%, 63%);
+    background: #262f38;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50px;
+    border: none;
+    margin-right: 12px;
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Overpass;
+}
+
+button:hover{
+    background: #7b8898;
+    color:hsl(0, 0%, 100%);
+    transition: all 0.5s;
+}
+
+button:active, button.active{
+    background: hsl(25, 97%, 53%);
+    transition: all 0.5s;
+}
+
+.submit{
+    color: hsl(0, 0%, 100%);
+    background: hsl(25, 97%, 53%);
+    margin-top: 20px;
+    width: 95%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.submit:hover{
+    background: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+
+/*THANK YOU CARD STYLES*/
+
+.thank-you-container{
+    display:none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align:center;
+    background: #1e252f;
+    width: 325px;
+    height: 350px;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+.illustration{
+ padding: 30px 0 20px 0;
+}
+
+.selection{
+    background: #272e38;
+    color:hsl(25, 97%, 53%);
+    border-radius: 20px;
+    width: 55%;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+.thank-you{
+    font-weight: 700;
+    color:hsl(0, 0%, 100%);
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+}
+
+.closing{
+    color: hsl(217, 12%, 63%);
+}
+
+.attribution {
+    color:  hsl(25, 97%, 53%); 
+    font-size: 11px; 
+    text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 1440px){
+    /*RATING CARD STYLES*/
+
+    .rating-container{
+        width: 400px;
+        height: 425px;
+    }
+
+    .btn-group{
+        padding-left: 35px;
+    }
+
+    button{
+        margin-right: 15px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .star-icon{
+        margin-left: 30px;
+        height: 50px;
+        width: 50px;
+    }
+
+    .star{
+        padding-top: 15px;
+    }
+
+    h1, p{
+        padding-left: 20px;
+    }
+
+    h1{
+        padding-bottom: 20px;
+    }
+
+    /*THANK YOU CARD STYLES*/
+
+    .thank-you-container{
+        width: 400px;
+        height: 425px;
+    }
+
+    .illustration{
+        height: 180px;
+        width: 180px;
+        margin-bottom: 10px;
+    }
+
+    .selection{
+        width: 50%;
+        padding-right: 20px;
+        line-height: 35px;
+        margin-bottom: 25px;
+    }
+    
+    .thank-you{
+        padding-right: 15px;
+        font-size: 22px;
+    }
+
+    .closing{
+        padding-right: 20px;
+        font-size: 18px;
+    }
